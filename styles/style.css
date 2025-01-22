@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 186px;
+    margin-top: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h2{
+    font-size: 2rem;
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    gap:32px ; 
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
