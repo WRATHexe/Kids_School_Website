@@ -1,8 +1,24 @@
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Shared Preferences */
+.quicksand-normal {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.btn{
+    padding: 10px;
+    margin: 1px;
+    text-align: center;
+    border-radius: 12px;
+    border: none;
+}
+/* Header Styles */
 header>div{
     display: flex;
     justify-content: center;
@@ -31,8 +47,19 @@ a{
     text-decoration: none;
     color: black;
 }
+#home{
+    color: rgb(254, 163, 1);
+}
+#about{
+    color: rgb(1, 172, 253);
+}
+#facilities{
+    color: rgb(5, 212, 223);
+}
+#admission{
+    color: rgb(93, 88, 239);
+}
 .contact{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 177px;
+    background-color:rgb(254, 163, 1);
 }
