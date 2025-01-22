@@ -7,27 +7,30 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
     </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="Quicksand-normal">
     <header>
-        <div class="nav-container">
-            <div class="logo"><img src="assets/logo.png" alt="logo">
-            <h2>SCHOOL</h2></div>
-            <nav>
-                <ul class="navmenu">
-                    <li class="orange">Home</li>
-                    <li class="skyblue">about</li>
-                    <li id=facilities>Facilities</li>
-                    <li id="admission">Admission</li>
-                </ul>
-            </nav>
-            <div><button class="contact btn">Contact</button>
-            <img id="bar" src="assets/bars-3.png"></button>
+        <section class="nav-section" >
+            <div class="nav-container">
+                <div class="logo"><img src="assets/logo.png" alt="logo">
+                <h2 class="school">SCHOOL</h2>
             </div>
-        </div>
-    </header>
-    <main> 
+                <nav>
+                    <ul class="navmenu">
+                        <li class="orange">Home</li>
+                        <li class="skyblue">about</li>
+                        <li id=facilities>Facilities</li>
+                        <li id="admission">Admission</li>
+                    </ul>
+                </nav>
+                <div>
+                    <button class="contact btn">Contact<button>
+                <img id="bar" src="assets/bars-3.png"></button>
+                </div>
+            </div>
+        </section>
         <section class="hero">
             <div class="hero-text">
                 <h1 class="hero-title"><span class="orange">Empowering</span><br>
@@ -37,6 +40,44 @@
             </div>
             <div class="hero-img">
                 <img src="assets/hero-kids.png" alt="banner">
+        </section>
+    </header>
+    <main> 
+        
+        <section class="curriculum top-bottom">
+            <h1 class="section-title">Standard Curriculum</h1>
+            <div class="level-container">
+                <div class="level1 level-style">
+                    <img src="assets/kinder.png" alt="kinder years">
+                    <div class="level-title">Kinder (3-6) Years</div>
+                    <div class="level-des"> 
+                        <p class="level-text">Our Kinder program is designed to provide a safe, nurturing and stimulating environment for children aged 3-6 years.</p>
+                        <p class="read-more-style read-more1" >read more</p>
+                    </div>
+                </div>
+                <div class="level2 level-style">
+                    <img src="assets/elementary.png" alt="Elementary School">
+                    <div class="level-title">Elementary School</div>
+                    <div class="level-des">
+                        <p class="level-text">Our Elementary School program is designed to provide a challenging and engaging curriculum that meets the needs of all students. </p>
+                        <p class="read-more-style read-more2">read more</p>
+                    </div>
+                    
+                </div>
+                <div class="level3 level-style">
+                    <img src="assets/middle.png" alt="middle school">
+                    <div class="level-title">Middle (10-16) Years</div>
+                    <div class="level-des">
+                        <p class="level-text">Our Middle School program is designed to provide a challenging and engaging curriculum that prepares students for high school and beyond.</p>
+                        <p class="read-more3 read-more-style">read more</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <button class="button1"><i class="fa-light fa-greater-than"></i></button>
+                <button class="button1"><i class="fa-light fa-less-than"></i></button>
+            </div>
         </section>
     </main>
     <footer></footer>
