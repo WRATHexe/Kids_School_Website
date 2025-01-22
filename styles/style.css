@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Hidden styles */
+#bar{
+    display: none;
+}
 /* Shared Preferences */
 .quicksand-normal {
   font-family: "Quicksand", serif;
@@ -18,13 +22,34 @@
     border-radius: 12px;
     border: none;
 }
+.orange{
+    color: rgb(254, 163, 1);
+}
+.skyblue{
+    color: rgb(1, 172, 253);
+}
+.p-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.top-bottom{
+    padding-top: 60px;
+    padding-bottom: 60px; 
+}
 /* Header Styles */
+
+header{
+    display: flex;
+    justify-content: center;   
+}
 header>div{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 186px;
-    margin-top: 20px;
+    margin: 12px 16px;
+    width: 1160px;
 }
 .logo{
     display: flex;
@@ -47,12 +72,7 @@ a{
     text-decoration: none;
     color: black;
 }
-#home{
-    color: rgb(254, 163, 1);
-}
-#about{
-    color: rgb(1, 172, 253);
-}
+
 #facilities{
     color: rgb(5, 212, 223);
 }
@@ -61,5 +81,92 @@ a{
 }
 .contact{
     width: 177px;
+    color: white;
     background-color:rgb(254, 163, 1);
+}
+/* main styles */
+main{
+    text-align: center;
+}
+
+/* hero styles */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50;
+    margin: auto 140px;
+}
+.hero-text{
+    width: 640px;
+    text-align: left;
+}
+.hero-title{
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+.hero-text .enroll{
+    width: 32.4%;
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 24px;
+}
+
+
+
+
+
+/* Mobile Device Style */
+@media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
+    header>div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header h2{
+        display:none ;
+    }
+    .navmenu{
+        display: none;
+    }
+    .contact{
+        display: none;
+    } 
+    #bar{
+        display: block;
+    }
+}
+/* hero styles */
+.hero{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto 16px;
+    padding: 20px auto;
+}
+.hero-text{
+    width: 357px;
+    text-align: center;
+}
+.hero-title{
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+.enroll{
+    width:calc(27.25% - 32px);
+    color: white;
+    background-color: black;
+    position: relative;
+    top: 18px;
+    transform: translate();
+}
+.hero-img{
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
 }
