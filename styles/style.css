@@ -32,6 +32,7 @@ a{
 .btn{
     padding: 10px;
     margin: 1px;
+    color: white;
     text-align: center;
     border-radius: 12px;
     border: none;
@@ -130,7 +131,7 @@ main{
 
             /* curriculam styles */
 main{
-    background-image: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-image: url(../assets/bg.png);
 }
 .section-title{
     font-size: 2.87rem;
@@ -166,8 +167,8 @@ main{
     background: rgb(254, 163, 1);
     color: white;
     border: none;
-    padding: 18px 22px;
-    font-size: 24px;
+    padding: 18px 23px;
+    font-size: 1.5rem;
 }
 .level-style{
     width:367px;
@@ -202,7 +203,7 @@ margin-bottom: 35px;
 
             /* story styles */
 
-.story-container{
+/* .story-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 19px;
@@ -261,10 +262,75 @@ margin-bottom: 35px;
     width: 197px;
     background-color: black;
     font-size: 1.25rem;
+} */
+
+.story-section,.story-container{
+    display: grid;
+    
+    justify-content: center;
+    
+}
+.story-section{
+    gap: 80px;
+    background:linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+.story-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 9px;
+    margin: 80px 140px;
+}
+.story{
+    display: flex;
+    width: 100%;
+    gap: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
 }
 
+.story-date{
+    position: relative;
+    left:38.35px;
+    bottom: 40px;
+    border-radius: 47.93px;
+    font-family: raleway;
+    font-size: 1rem;
+    color: white;
+    padding: 15px 19px;
+}
+.date-color1{
+    background: rgb(60, 216, 232);
+}
+.date-color2{
+    background: rgb(93, 88, 240);
+    
+}
+.date-color3{
+    background: rgb(149, 178, 38);
+}
+.story-collage{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 9px;
+}
+.mini-title{
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 38px;
+    max-width: 198px;
 
+}
+.big-story-title{
+    font-size: 1.5rem;
+}
+.view-btn{
+    width: 197px;
+    background-color: black;
 
+}
 
 
 
@@ -319,7 +385,7 @@ margin-bottom: 35px;
     top: 18px;
 }
 .hero-img{
-    width: calc(100% - 20px);
+    width: calc(100% - 5px);
     margin-bottom: 20px;
 }
 
@@ -370,6 +436,16 @@ margin-bottom: 27px;
 }
 .button1{
     display: none;
+}
+/* Story styles */
+.big-story{
+    display: none;
+}
+.story-collage{
+    width:100%;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 9px;
 }
 
 }
