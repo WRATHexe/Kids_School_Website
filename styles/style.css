@@ -160,10 +160,10 @@ main{
     color: rgb(100, 200, 255);
 }
 .read-more2{
-    color: rgb(255, 100, 100);
+    color: rgb(240, 170, 0);
 }
 .read-more3{
-    color: rgb(100, 255, 100);
+    color: rgb(135, 0, 255);
 }
 .button1{
     border-radius: 30px;
@@ -203,68 +203,7 @@ margin-bottom: 35px;
     margin-bottom: 58px;
 }
 
-            /* story styles */
-
-/* .story-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 19px;
-    margin: 80px 140px;
-    justify-items: center;
-}
-.story{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 24px;
-}
-.story-date{
-    position: relative;
-    left:38.35px;
-    bottom: 40px;
-    border-radius: 47.93px;
-    font-family: raleway;
-    font-size: 1rem;
-    color: white;
-    padding: 15px 19px;
-}
-.date-color1{
-    background: rgb(60, 216, 232);
-}
-.date-color2{
-    background: rgb(93, 88, 240);
-    
-}
-.date-color3{
-    background: rgb(149, 178, 38);
-}
-.story-collage{
-    max-width: 601 px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 19px;
-}
-.mini-title{
-    text-align: left;
-    font-size: 1rem;
-    margin-left: 38px;
-    max-width: 198px;
-
-}
-.big-story-title{
-    font-size: 1.5rem;
-}
-.view-btn{
-    padding: 10px;
-    color: white;
-    width: 197px;
-    background-color: black;
-    font-size: 1.25rem;
-} */
+/* story styles */
 
 .story-section,.story-container{
     display: grid;
@@ -299,6 +238,7 @@ margin-bottom: 35px;
     position: relative;
     left:38.35px;
     bottom: 40px;
+    border: none;
     border-radius: 47.93px;
     font-family: raleway;
     font-size: 1rem;
@@ -408,28 +348,23 @@ footer{
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
-    margin: auto auto;
-    padding: auto auto;
 }
 .hero-img{
-    width: calc(100% /5);
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 .hero-text{
-    width: 357px;
+    width: 300px;
     text-align: center;
+}
+.enroll{
+    font-size: 0.9rem;
 }
 .hero-title{
     font-size: 2rem;
     margin-bottom: 18px;
 }
-.enroll{
-    width:calc(27.25% - 32px);
-    color: white;
-    background-color: black;
-    position: relative;
-    top: 18px;
-}
+
 .hero-img{
     width: calc(100% - 5px);
     margin-bottom: 20px;
@@ -438,19 +373,21 @@ footer{
     /* curriculam styles */
 
 .section-title{
-    font-size: 3rem;
+    font-size: 2.3rem;
 }
 
 .level-container{
+    width: 100%;
     display: grid;
     justify-content: center;
-    padding: 36px 28px;
+    padding: auto 28px;
     margin: auto 16px;
     row-gap: 12.3px;
 
 }
 .level-style{
     display: grid;
+    width: 95%;
     justify-items: center;
     align-items: center;
     row-gap: 20px;
@@ -475,10 +412,10 @@ margin-bottom: 27px;
     font-weight: 500px;
     margin-left: 80px;
     margin-right: 80px;
-    margin-bottom: 25.1px;
+    margin-bottom: 15.1px;
 }
 .read-more-style{
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 .button1{
     display: none;
@@ -487,18 +424,32 @@ margin-bottom: 27px;
 .big-story{
     display: none;
 }
-.story-collage{
-    width:100%;
-    grid-template-columns: 1fr;
-    flex-direction: column;
-    gap: 9px;
+.story-section{
+    gap: 20px;
+    
 }
 .story-container{
-    margin-bottom: 20px;
+display:grid;
+grid-template-columns: repeat(1,1fr);
+gap: 11px;
+padding: auto 16px;
+margin: 0 16px;
 }
+.story-date{
+    bottom: 30px;
+    border-radius: 28.54px;
+    font-size: 0.6rem;
+    color: white;
+    padding: 7.5px 9.5px;
+}
+.view-btn{
+    font-size: 1rem;
+}
+
+/* footer styles */
 .footer-container{
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    flex-direction: column;;
+    margin: 0px;
 }
 }
